@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="scroll-smooth">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -7,38 +7,39 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Alata&family=Josefin+Sans:wght@300&display=swap" rel="stylesheet" />
-    <script defer src="js/script.js"></script>
+    <link rel="icon" href="images/Apple_Mail-512.webp" type="image/x-icon" />
     <link rel="stylesheet" href="css/style.css" />
-    <title>Chris Vargas | HTML Email Developer</title>
+    <script defer src="js/script.js"></script>
+    <title>Christopher | Email Dev</title>
   </head>
   <body>
     <!-- Hero Section -->
-    <section id="hero">
+    <section id="hero" class="bg-contain bg-no-repeat h-screen md:bg-cover" style="background-image: url(./images/hero/email9.jpg)">
       <!-- Hero Container -->
       <div class="container max-w-6xl mx-auto px-6 py-12">
         <!-- Menu / Logo  -->
-        <nav class="flex items-center justify-between font-bold text-white">
+        <nav class="max-h-2 flex items-center justify-between font-bold text-white">
           <!-- Logo -->
-          <img src="images/logo.svg" alt="" />
+          <!-- <div class="max-w-xs">
+            <img class="max-h-full" src="images/logo5/cover.png" alt="" />
+          </div> -->
+          <div>
+            <h1 class="font-alata text-2xl">Christopher.</h1>
+          </div>
           <!-- Menu -->
           <div class="hidden h-10 font-alata md:flex md:space-x-8">
             <div class="group">
-              <a href="#">Skills</a>
+              <a href="#skills">Skills</a>
               <div class="mx-2 group-hover:border-b group-hover:border-blue-50"></div>
             </div>
             <div class="group">
-              <a href="#">Projects</a>
+              <a href="#projects">Projects</a>
               <div class="mx-2 group-hover:border-b group-hover:border-blue-50"></div>
             </div>
             <div class="group">
               <a href="#">Resume</a>
               <div class="mx-2 group-hover:border-b group-hover:border-blue-50"></div>
             </div>
-
-            <!-- <div class="group">
-              <a href="#">Events</a>
-              <div class="mx-2 group-hover:border-b group-hover:border-blue-50"></div>
-            </div> -->
           </div>
           <!--  Hamburger Button-->
           <div class="md:hidden">
@@ -55,54 +56,157 @@
           id="menu"
           class="absolute top-0 bottom-0 left-0 hidden flex-col self-end w-full min-h-screen py-1 pt-40 pl-12 space-y-3 text-lg text-white uppercase bg-black"
         >
-          <a href="" class="hover:text-pink-500">About</a>
-          <a href="" class="hover:text-pink-500">Careers</a>
-          <a href="" class="hover:text-pink-500">Events</a>
-          <a href="" class="hover:text-pink-500">Products</a>
-          <a href="" class="hover:text-pink-500">Support</a>
+          <a href="" class="hover:text-orange-200">Skills</a>
+          <a href="" class="hover:text-orange-200">Projects</a>
+          <a href="" class="hover:text-orange-200">Resume</a>
         </div>
-
-        <!-- Hero -->
-        <div class="max-w-lg mt-32 mb-32 p-4 font-sans text-4xl text-white uppercase border-2 md:p-10 md:m-32 md:mx-0 md:text-6xl">
-          Chris Vargas <br />
-          HTML Email Developer
-        </div>
-
-        <button class="btn text-white">Projects</button>
-        <button class="btn text-white">Resume</button>
       </div>
     </section>
 
-    <!--  Skills -->
-    <section id="feature">
-      <!-- feature container -->
-      <div class="relative container flex flex-col max-w-6xl mx-auto my-32 px-6 text-gray-900 md:flex-row md:p-0">
-        <!-- image -->
-        <!-- <img src="images/desktop/image-interactive.jpg" alt="" /> -->
-        <img class="max-w-sm max-h-14" src="images/IMG_3112.jpg" alt="" />
+    <!-- Buttons -->
+    <section class="flex justify-center items-center mt-8">
+      <a href="#projects">
+        <button class="btn text-black">Projects</button>
+      </a>
+      <a href="resume">
+        <button class="btn text-black">Resume</button>
+      </a>
+    </section>
 
-        <!-- text container -->
-        <div class="top-48 pr-0 bg-white md:absolute md:right-0 md:py-20 md:pl-20">
-          <h2 class="max-w-lg mt-10 mb-6 font-sans text-4xl text-center text-gray-900 uppercase md:text-5xl md:m-0 md:text-left">Skills</h2>
-          <p class="max-w-md text-center">HTML</p>
-          <p class="max-w-md text-center">CSS</p>
-          <p class="max-w-md text-center">Javascript</p>
-          <p class="max-w-md text-center">Javascript</p>
-          <p class="max-w-md text-center">Javascript</p>
-          <p class="max-w-md text-center">Javascript</p>
-          <p class="max-w-md text-center">Javascript</p>
+    <!-- Profile -->
+    <section class="flex container max-w-6xl mx-auto mt-8 text-center text-black text-4xl font-sans uppercase border-2 border-black">
+      <div class="p-8 flex flex-col items-center justify-center">
+        <h1 class="text-7xl">Christopher Vargas</h1>
+        <br />
+        <p>HTML Email Developer</p>
+      </div>
+      <div>
+        <img class="rounded-bl-[300px]" src="images/profilepic/IMG_3112-removebg-preview.png" alt="" />
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+
+    <!--  SKILLS -->
+    <section id="skills" class="container max-w-6xl mx-auto text-center mt-8">
+      <h3 class="text-4xl uppercase md:text-5xl">Skills</h3>
+
+      <div class="grid grid-cols-5 mt-8">
+        <div class="uppercase flex flex-col items-center">
+          <p>html</p>
+          <img class="h-8 w-8" src="images/icons/html-5.png" alt="" />
+        </div>
+
+        <div class="uppercase flex flex-col items-center">
+          <p>css</p>
+          <img class="h-8 w-8" src="images/icons/css-3.png" alt="" />
+        </div>
+
+        <div class="uppercase flex flex-col items-center">
+          <p>javascript</p>
+          <img class="h-8 w-8" src="images/icons/js.png" alt="" />
+        </div>
+
+        <div class="uppercase flex flex-col items-center">
+          <p>Sass</p>
+          <img class="h-8 w-8" src="images/icons/sass.png" alt="" />
+        </div>
+        <!--  -->
+        <div class="uppercase flex flex-col items-center">
+          <p>bootstrap</p>
+          <img class="h-8 w-8" src="images/icons/bootstrap.png" alt="" />
+        </div>
+      </div>
+
+      <div class="grid grid-cols-5 mt-8">
+        <div class="uppercase flex flex-col items-center">
+          <p>html</p>
+          <img class="h-8 w-8" src="images/icons/html-5.png" alt="" />
+        </div>
+
+        <div class="uppercase flex flex-col items-center">
+          <p>css</p>
+          <img class="h-8 w-8" src="images/icons/css-3.png" alt="" />
+        </div>
+
+        <div class="uppercase flex flex-col items-center">
+          <p>javascript</p>
+          <img class="h-8 w-8" src="images/icons/js.png" alt="" />
+        </div>
+
+        <div class="uppercase flex flex-col items-center">
+          <p>Sass</p>
+          <img class="h-8 w-8" src="images/icons/sass.png" alt="" />
+        </div>
+        <!--  -->
+        <div class="uppercase flex flex-col items-center">
+          <p>bootstrap</p>
+          <img class="h-8 w-8" src="images/icons/bootstrap.png" alt="" />
+        </div>
+      </div>
+
+      <div class="grid grid-cols-5 mt-8">
+        <div class="uppercase flex flex-col items-center">
+          <p>html</p>
+          <img class="h-8 w-8" src="images/icons/html-5.png" alt="" />
+        </div>
+
+        <div class="uppercase flex flex-col items-center">
+          <p>css</p>
+          <img class="h-8 w-8" src="images/icons/css-3.png" alt="" />
+        </div>
+
+        <div class="uppercase flex flex-col items-center">
+          <p>javascript</p>
+          <img class="h-8 w-8" src="images/icons/js.png" alt="" />
+        </div>
+
+        <div class="uppercase flex flex-col items-center">
+          <p>Sass</p>
+          <img class="h-8 w-8" src="images/icons/sass.png" alt="" />
+        </div>
+        <!--  -->
+        <div class="uppercase flex flex-col items-center">
+          <p>bootstrap</p>
+          <img class="h-8 w-8" src="images/icons/bootstrap.png" alt="" />
+        </div>
+      </div>
+
+      <div class="grid grid-cols-5 mt-8">
+        <div class="uppercase flex flex-col items-center">
+          <p>html</p>
+          <img class="h-8 w-8" src="images/icons/html-5.png" alt="" />
+        </div>
+
+        <div class="uppercase flex flex-col items-center">
+          <p>css</p>
+          <img class="h-8 w-8" src="images/icons/css-3.png" alt="" />
+        </div>
+
+        <div class="uppercase flex flex-col items-center">
+          <p>javascript</p>
+          <img class="h-8 w-8" src="images/icons/js.png" alt="" />
+        </div>
+
+        <div class="uppercase flex flex-col items-center">
+          <p>Sass</p>
+          <img class="h-8 w-8" src="images/icons/sass.png" alt="" />
+        </div>
+        <!--  -->
+        <div class="uppercase flex flex-col items-center">
+          <p>bootstrap</p>
+          <img class="h-8 w-8" src="images/icons/bootstrap.png" alt="" />
         </div>
       </div>
     </section>
 
     <!-- Projects -->
-    <section id="creations">
+    <section id="projects">
       <!-- creations container -->
       <div class="container max-w-6xl mx-auto my-32 px-6 text-gray-900 md:px-0">
         <!-- creation header -->
         <div class="flex justify-center mb-20 md:justify-between">
-          <h2 class="text-4xl text-center uppercase md:text-left md:text-5xl">Our Creations</h2>
-
+          <h2 class="text-4xl text-center uppercase md:text-left md:text-5xl">My Work</h2>
           <button class="hidden btn md:block">See all</button>
         </div>
 
@@ -111,38 +215,39 @@
           <!-- item 1 -->
           <div class="group item">
             <!-- desktop img -->
-            <img src="images/emails/uber email.png" alt="" class="hidden w-full duration-200 md:block group-hover:scale-110" />
+            <img src="images/emails/Disney full email.png" alt="" class="w-full duration-200 md:block group-hover:scale-110" />
             <!-- item gradient -->
             <div class="item-gradient"></div>
             <!-- item text -->
-            <h5>Deep Earth</h5>
+            <h5>promotional email</h5>
           </div>
+
           <!-- item 2 -->
           <div class="group item">
             <!-- desktop img -->
-            <img src="images/emails/Disney full email.png" alt="" class="hidden w-full duration-200 md:block group-hover:scale-110" />
+            <img src="images/emails/New Yorker Email.png" alt="" class="w-full duration-200 md:block group-hover:scale-110" />
             <!-- item gradient -->
             <div class="item-gradient"></div>
             <!-- item text -->
-            <h5>Night arcade</h5>
+            <h5>newsletter</h5>
           </div>
           <!-- item 3 -->
           <div class="group item">
             <!-- desktop img -->
-            <img src="images/emails/New Yorker Email.png" alt="" class="hidden w-full duration-200 md:block group-hover:scale-110" />
+            <img src="images/emails/uber email.png" alt="" class="w-full duration-200 md:block group-hover:scale-110" />
             <!-- item gradient -->
             <div class="item-gradient"></div>
             <!-- item text -->
-            <h5>soccer team vr</h5>
+            <h5>transactional email</h5>
           </div>
           <!-- item 4 -->
           <div class="group item">
             <!-- desktop img -->
-            <img src="images/desktop/image-grid.jpg" alt="" class="hidden w-full duration-200 md:block group-hover:scale-110" />
+            <img src="images/desktop/image-grid.jpg" alt="" class="w-full duration-200 md:block group-hover:scale-110" />
             <!-- item gradient -->
             <div class="item-gradient"></div>
             <!-- item text -->
-            <h5>the grid</h5>
+            <h5>Landing page</h5>
           </div>
         </div>
 
@@ -162,33 +267,18 @@
           <div class="flex flex-col items-center space-y-8 md:items-start md:space-y-4">
             <!-- logo -->
             <div class="h-8">
-              <img src="images/logo.svg" alt="" class="w-44 md:ml-3" />
+              <h1 class="md:ml-3 text-3xl text-white">Christopher Vargas</h1>
             </div>
             <!-- menu container -->
             <div class="flex flex-col items-center space-y-4 font-bold text-white md:flex-row md:space-y-0 md:space-x-6 md:ml-3">
               <!-- item 1 -->
               <div class="group h-10">
-                <a href="#">About</a>
+                <a href="#">Download Resume</a>
                 <div class="mx-2 group-hover:border-b group-hover:border-blue-50"></div>
               </div>
               <!-- item 2 -->
               <div class="group h-10">
-                <a href="#">Careers</a>
-                <div class="mx-2 group-hover:border-b group-hover:border-blue-50"></div>
-              </div>
-              <!-- item 3 -->
-              <div class="group h-10">
-                <a href="#">Events</a>
-                <div class="mx-2 group-hover:border-b group-hover:border-blue-50"></div>
-              </div>
-              <!-- item 4 -->
-              <div class="group h-10">
-                <a href="#">Products</a>
-                <div class="mx-2 group-hover:border-b group-hover:border-blue-50"></div>
-              </div>
-              <!-- item 5 -->
-              <div class="group h-10">
-                <a href="#">Support</a>
+                <a href="#">Connect with me</a>
                 <div class="mx-2 group-hover:border-b group-hover:border-blue-50"></div>
               </div>
             </div>
@@ -199,32 +289,20 @@
             <div class="flex items-center justify-center mx-auto md:mx-0 space-x-4 md:justify-end">
               <!-- icon 1 -->
               <div class="h-8 group">
-                <a href="#">
-                  <img src="images/icon-facebook.svg" alt="" class="h-6" />
+                <a target="_blank" href="https://github.com/GqCodes">
+                  <img src="images/icon-github.png" alt="" class="h-6" />
                 </a>
               </div>
               <!-- icon 2 -->
               <div class="h-8 group">
-                <a href="#">
-                  <img src="images/icon-twitter.svg" alt="" class="h-6" />
-                </a>
-              </div>
-              <!-- icon 3 -->
-              <div class="h-8 group">
-                <a href="#">
-                  <img src="images/icon-pinterest.svg" alt="" class="h-6" />
-                </a>
-              </div>
-              <!-- icon 4 -->
-              <div class="h-8 group">
-                <a href="#">
-                  <img src="images/icon-instagram.svg" alt="" class="h-6" />
+                <a target="_blank" href="https://www.linkedin.com/in/chrisfvargas/">
+                  <img src="images/icon-linkedin.png" alt="" class="h-6" />
                 </a>
               </div>
             </div>
 
             <!-- copy -->
-            <div class="font-bold">&copy; 2022 loop studios. All Rights Reserved</div>
+            <!-- <div class="font-bold">&copy; 2022 loop studios. All Rights Reserved</div> -->
           </div>
         </div>
       </div>
