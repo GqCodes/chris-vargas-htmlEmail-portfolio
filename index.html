@@ -7,16 +7,13 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Alata&family=Josefin+Sans:wght@300&display=swap" rel="stylesheet" />
-    <link rel="icon" href="images/test6.png" type="image/x-icon" />
+    <link rel="icon" href="images/titlelogo1.png" type="image/x-icon" />
     <link rel="stylesheet" href="css/style.css" />
     <script defer src="js/script.js"></script>
     <title>Christopher | Email Dev</title>
   </head>
   <body class="bg-stone-50">
-    <!-- Hero Section
-    style="background-image: url(./images/hero/email9.jpg)"
-    class="bg-contain bg-no-repeat h-screen md:bg-cover"
-    -->
+    <!-- Hero Section -->
     <section id="hero" class="bg-no-repeat h-screen w-full bg-center md:bg-cover">
       <!-- Hero Container -->
       <div class="container max-w-6xl mx-auto px-6 py-12">
@@ -32,15 +29,15 @@
           <!-- Menu -->
           <div class="hidden h-10 font-alata md:flex md:space-x-8">
             <div class="group">
+              <a href="#about">About</a>
+              <div class="mx-2 group-hover:border-b group-hover:border-amber-300"></div>
+            </div>
+            <div class="group">
               <a href="#skills">Skills</a>
               <div class="mx-2 group-hover:border-b group-hover:border-amber-300"></div>
             </div>
             <div class="group">
               <a href="#projects">Projects</a>
-              <div class="mx-2 group-hover:border-b group-hover:border-amber-300"></div>
-            </div>
-            <div class="group">
-              <a href="#">Resume</a>
               <div class="mx-2 group-hover:border-b group-hover:border-amber-300"></div>
             </div>
           </div>
@@ -67,25 +64,24 @@
     </section>
 
     <!-- Buttons -->
-    <section class="flex justify-center items-center mt-8">
+    <section class="flex justify-center items-center mt-8 text-2xl">
       <a href="#projects">
         <button class="btn text-black">Projects</button>
       </a>
-      <a href="resume">
+      <!-- <a href="resume">
         <button class="btn text-black">Resume</button>
-      </a>
+      </a> -->
     </section>
 
     <!-- About Me -->
-    <section class="container max-w-6xl flex mx-auto mt-8 text-black font-sans uppercase border-2 border-black">
+    <section id="about" class="container max-w-6xl flex mx-auto mt-8 text-black font-sans uppercase border-2 border-black scroll-mt-28">
       <div class="p-8 flex flex-col items-start justify-center w-8/12">
         <h1 class="text-6xl">Christopher Vargas</h1>
         <p class="my-4 text-3xl">HTML Email Developer</p>
-        <p class="text-base">
-          I'm a developer based in Houston, Texas. I enjoy making things. I'm self-motivated, detail-oriented, and eager to learn new
-          things. I specialize in email development, which includes everything from hand-coded HTML & CSS emails to various Frameworks,
-          Handlebars, and more. I'm obsessed with frontend web development and am constantly learning new technologies to create amazing
-          products. Please take a look and keep in touch. I would love to hear from you. Feel free to contact me. aaronshields83@gmail.com
+        <p class="text-normal normal-case">
+          Frontend Developer specializing in Email Development, based in Orlando, FL. I love bringing creatives to life with code.
+          Constatntly focused on improving my development skills & getting better everyday. I hope you stay for while & check out my work
+          below!
         </p>
       </div>
       <div class="w-4/12">
@@ -94,10 +90,10 @@
     </section>
 
     <!--  SKILLS -->
-    <section id="skills" class="container max-w-6xl mx-auto text-center mt-8">
+    <section id="skills" class="container max-w-6xl mx-auto text-center mt-8 scroll-mt-28">
       <h3 class="text-4xl uppercase md:text-5xl">Skills</h3>
 
-      <div class="grid grid-cols-5 mt-8">
+      <div class="grid grid-cols-4 mt-8">
         <div class="uppercase flex flex-col items-center">
           <p>html</p>
           <img class="h-8 w-8" src="images/icons/html-5.png" alt="" />
@@ -117,49 +113,38 @@
           <p>Sass</p>
           <img class="h-8 w-8" src="images/icons/sass.png" alt="" />
         </div>
-        <!--  -->
+      </div>
+
+      <div class="grid grid-cols-4 mt-8">
         <div class="uppercase flex flex-col items-center">
           <p>bootstrap</p>
           <img class="h-8 w-8" src="images/icons/bootstrap.png" alt="" />
         </div>
-      </div>
 
-      <div class="grid grid-cols-5 mt-8">
         <div class="uppercase flex flex-col items-center">
-          <p>Github</p>
-          <img class="h-8 w-8" src="images/icons/github-2.png" alt="" />
+          <p>Tailwind Css</p>
+          <img class="h-8 w-8" src="images/icons/tailwind.png" alt="" />
         </div>
-
         <div class="uppercase flex flex-col items-center">
           <p>mjml</p>
           <img class="h-8 w-8" src="images/icons/mjml.png" alt="" />
         </div>
 
         <div class="uppercase flex flex-col items-center">
-          <p>Inky</p>
-          <img class="h-8 w-8" src="images/icons/inky-big.svg" alt="" />
+          <p>cms</p>
+          <img class="h-8 w-8" src="images/icons/cms.png" alt="" />
+        </div>
+      </div>
+
+      <div class="grid grid-cols-4 mt-8">
+        <div class="uppercase flex flex-col items-center">
+          <p>klaviyo</p>
+          <img class="h-10 w-10" src="images/icons/Klaviyo-Logo.png" alt="" />
         </div>
 
         <div class="uppercase flex flex-col items-center">
           <p>convert kit</p>
           <img class="h-8 w-8" src="images/icons/convertkit.svg" alt="" />
-        </div>
-        <!--  -->
-        <div class="uppercase flex flex-col items-center">
-          <p>klaviyo</p>
-          <img class="h-8 w-8" src="images/icons/Klaviyo-Logo.png" alt="" />
-        </div>
-      </div>
-
-      <div class="grid grid-cols-5 mt-8">
-        <div class="uppercase flex flex-col items-center">
-          <p>cms</p>
-          <img class="h-8 w-8" src="images/icons/cms.png" alt="" />
-        </div>
-
-        <div class="uppercase flex flex-col items-center">
-          <p>googl analytics</p>
-          <img class="h-8 w-8" src="images/icons/google.png" alt="" />
         </div>
 
         <div class="uppercase flex flex-col items-center">
@@ -168,25 +153,20 @@
         </div>
 
         <div class="uppercase flex flex-col items-center">
-          <p>mailchimp</p>
-          <img class="h-8 w-8" src="images/icons/mailchimp.png" alt="" />
+          <p>google analytics</p>
+          <img class="h-8 w-8" src="images/icons/google.png" alt="" />
         </div>
-        <!--  -->
+      </div>
+
+      <div class="grid grid-cols-4 mt-8">
         <div class="uppercase flex flex-col items-center">
           <p>photoshop</p>
           <img class="h-8 w-8" src="images/icons/photoshop.png" alt="" />
         </div>
-      </div>
 
-      <div class="grid grid-cols-5 mt-8">
         <div class="uppercase flex flex-col items-center">
           <p>sketch</p>
           <img class="h-8 w-8" src="images/icons/sketch.png" alt="" />
-        </div>
-
-        <div class="uppercase flex flex-col items-center">
-          <p>tailwind css</p>
-          <img class="h-8 w-8" src="images/icons/tailwind.png" alt="" />
         </div>
 
         <div class="uppercase flex flex-col items-center">
@@ -195,64 +175,76 @@
         </div>
 
         <div class="uppercase flex flex-col items-center">
-          <p>Sass</p>
-          <img class="h-8 w-8" src="images/icons/sass.png" alt="" />
-        </div>
-        <div class="uppercase flex flex-col items-center">
-          <p>bootstrap</p>
-          <img class="h-8 w-8" src="images/icons/bootstrap.png" alt="" />
+          <p>Github</p>
+          <img class="h-8 w-8" src="images/icons/github-2.png" alt="" />
         </div>
       </div>
     </section>
 
     <!-- Projects -->
-    <section id="projects">
-      <!-- creations container -->
+    <section id="projects" class="scroll-mt-28">
+      <!-- MY WORK CONTAINER -->
       <div class="container max-w-6xl mx-auto my-32 px-6 text-gray-900 md:px-0">
-        <!-- creation header -->
+        <!-- MY WORK HEADER -->
         <div class="flex justify-center mb-20 md:justify-between">
           <h2 class="text-4xl text-center uppercase md:text-left md:text-5xl">My Work</h2>
-          <button class="hidden btn md:block">See all</button>
+
+          <!-- SEE ALL PROJECTS LINK -->
+          <!-- <a target="_blank" href="projects.html"><button class="hidden btn md:block">See all</button></a> -->
         </div>
 
-        <!-- Items Container -->
+        <!-- PROJECTS CONTAINER -->
         <div class="item-container">
-          <!-- item 1 -->
+          <!-- PROJECT 1 -->
           <div class="group item">
-            <!-- desktop img -->
             <img src="images/emails/Disney full email.png" alt="" class="w-full duration-200 md:block group-hover:scale-110" />
-            <!-- item gradient -->
+            <!-- PROJECT GRADIENT -->
             <div class="item-gradient"></div>
-            <!-- item text -->
             <h5>promotional email</h5>
+            <!-- PROJECT LINKS -->
+            <div
+              class="absolute w-full top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-white opacity-0 group-hover:opacity-100"
+            >
+              <div class="text-sm flex justify-center items-center space-x-4">
+                <a target="_blank" class="item-btn text-center" href="https://github.com/GqCodes/disney_promotional_email">View code</a>
+                <a target="_blank" class="item-btn" href="https://gqcodes.github.io/disney_promotional_email/">See it live</a>
+              </div>
+            </div>
           </div>
 
-          <!-- item 2 -->
+          <!-- PROJECT 2 -->
           <div class="group item">
-            <!-- desktop img -->
             <img src="images/emails/New Yorker Email.png" alt="" class="w-full duration-200 md:block group-hover:scale-110" />
-            <!-- item gradient -->
+            <!-- PROJECT GRADIENT -->
             <div class="item-gradient"></div>
-            <!-- item text -->
+
             <h5>newsletter email</h5>
+            <!-- PROJECT LINKS -->
+            <div
+              class="absolute w-full top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-white opacity-0 group-hover:opacity-100"
+            >
+              <div class="text-sm flex justify-center items-center space-x-4">
+                <a target="_blank" class="item-btn text-center" href="https://github.com/GqCodes/New_Yorker_Newletter_Email">View code</a>
+                <a target="_blank" class="item-btn" href="https://gqcodes.github.io/New_Yorker_Newletter_Email/">See it live</a>
+              </div>
+            </div>
           </div>
-          <!-- item 3 -->
+
+          <!-- PROJECT 3 -->
           <div class="group item">
-            <!-- desktop img -->
             <img src="images/emails/uber email.png" alt="" class="w-full duration-200 md:block group-hover:scale-110" />
-            <!-- item gradient -->
+            <!-- PROJECT GRADIENT -->
             <div class="item-gradient"></div>
-            <!-- item text -->
             <h5>transactional email</h5>
-          </div>
-          <!-- item 4 -->
-          <div class="group item">
-            <!-- desktop img -->
-            <img src="images/desktop/image-grid.jpg" alt="" class="w-full duration-200 md:block group-hover:scale-110" />
-            <!-- item gradient -->
-            <div class="item-gradient"></div>
-            <!-- item text -->
-            <h5>Landing page</h5>
+            <!-- PROJECT LINKS -->
+            <div
+              class="absolute w-full top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-white opacity-0 group-hover:opacity-100"
+            >
+              <div class="text-sm flex justify-center items-center space-x-4">
+                <a target="_blank" class="item-btn text-center" href="https://github.com/GqCodes/goodEats_Transactional_Email">View code</a>
+                <a target="_blank" class="item-btn" href="https://gqcodes.github.io/goodEats_Transactional_Email/">See it live</a>
+              </div>
+            </div>
           </div>
         </div>
 
@@ -277,13 +269,18 @@
             <!-- menu container -->
             <div class="flex flex-col items-center space-y-4 font-bold text-white md:flex-row md:space-y-0 md:space-x-6 md:ml-3">
               <!-- item 1 -->
-              <div class="group h-10">
+              <!-- <div class="group h-10">
                 <a href="#">Download Resume</a>
                 <div class="mx-2 group-hover:border-b group-hover:border-amber-300"></div>
-              </div>
-              <!-- item 2 -->
+              </div> -->
+              <!-- EMAIL -->
               <div class="group h-10">
                 <a href="mailto:gqcodes@gmail.com">Connect with me</a>
+                <div class="mx-2 group-hover:border-b group-hover:border-amber-300"></div>
+              </div>
+              <!-- BACK TO TOP -->
+              <div class="group h-10">
+                <a href="#">Back to top</a>
                 <div class="mx-2 group-hover:border-b group-hover:border-amber-300"></div>
               </div>
             </div>

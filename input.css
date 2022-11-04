@@ -3,8 +3,11 @@
 @tailwind utilities;
 
 @layer base {
-  h5 {
+  /* h5 {
     @apply absolute px-6 duration-200 w-52 bottom-4 md:bottom-8 md:px-10 group-hover:scale-110 group-hover:text-amber-400;
+  } */
+  h5 {
+    @apply absolute px-6 duration-200 w-52 bottom-4 md:bottom-8 md:px-10 group-hover:hidden;
   }
 }
 
@@ -20,6 +23,9 @@
   }
   .item-gradient {
     @apply absolute top-0 bottom-0 right-0 left-0 bg-gradient-to-b from-transparent to-gray-900 group-hover:from-gray-50 group-hover:to-white group-hover:opacity-70 group-hover:block;
+  }
+  .item-btn {
+    @apply py-2 px-3 uppercase border-2 font-alata bg-black text-white block;
   }
 }
 
@@ -64,11 +70,4 @@
 }
 .open .hamburger-bottom {
   transform: rotate(-45deg) translateY(6px) translateX(-6px);
-}
-
-.hide-link {
-  display: none;
-}
-.hide-link:hover img {
-  display: block;
 }
