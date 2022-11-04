@@ -14,15 +14,12 @@
   </head>
   <body class="bg-stone-50">
     <!-- Hero Section -->
-    <section id="hero" class="bg-no-repeat h-screen w-full bg-center md:bg-cover">
+    <section id="hero" class="bg-no-repeat bg-cover bg-top h-96 w-full md:h-screen md:bg-center md:bg-cover">
       <!-- Hero Container -->
       <div class="container max-w-6xl mx-auto px-6 py-12">
         <!-- Menu / Logo  -->
         <nav class="max-h-2 flex items-center justify-between font-bold text-white">
           <!-- Logo -->
-          <!-- <div class="max-w-xs">
-            <img class="max-h-full" src="images/logo5/cover.png" alt="" />
-          </div> -->
           <div>
             <h1 class="font-alata text-2xl">Christopher.</h1>
           </div>
@@ -54,57 +51,60 @@
         <!--  Mobile Menu -->
         <div
           id="menu"
-          class="absolute top-0 bottom-0 left-0 hidden flex-col self-end w-full min-h-screen py-1 pt-40 pl-12 space-y-3 text-lg text-white uppercase bg-black"
+          class="absolute top-0 bottom-0 left-0 hidden flex-col self-end w-full min-h-screen bg-opacity-50 py-1 pt-40 pl-12 space-y-3 text-lg text-white uppercase bg-black"
         >
-          <a href="" class="hover:text-orange-200">Skills</a>
-          <a href="" class="hover:text-orange-200">Projects</a>
-          <a href="" class="hover:text-orange-200">Resume</a>
+          <a href="#about" class="hover:text-orange-200 nav-item">About</a>
+          <a href="#skills" class="hover:text-orange-200 nav-item">Skills</a>
+          <a href="#projects" class="hover:text-orange-200 nav-item">Projects</a>
         </div>
       </div>
     </section>
 
     <!-- Buttons -->
     <section class="flex justify-center items-center mt-8 text-2xl">
-      <a href="#projects">
+      <!-- <a href="#projects">
         <button class="btn text-black">Projects</button>
-      </a>
+      </a> -->
       <!-- <a href="resume">
         <button class="btn text-black">Resume</button>
       </a> -->
     </section>
 
     <!-- About Me -->
-    <section id="about" class="container max-w-6xl flex mx-auto mt-8 text-black font-sans uppercase border-2 border-black scroll-mt-28">
-      <div class="p-8 flex flex-col items-start justify-center w-8/12">
-        <h1 class="text-6xl">Christopher Vargas</h1>
-        <p class="my-4 text-3xl">HTML Email Developer</p>
+    <section
+      id="about"
+      class="container max-w-6xl flex flex-col mx-auto mt-8 text-black font-sans uppercase md:border-2 md:border-black md:flex-row scroll-mt-28"
+    >
+      <div class="p-8 flex flex-col items-center text-center justify-center md:text-left md:items-start md:w-8/12">
+        <h1 class="text-3xl md:text-6xl">Christopher Vargas</h1>
+        <p class="my-4 text-xl">HTML Email Developer</p>
         <p class="text-normal normal-case">
           Frontend Developer specializing in Email Development, based in Orlando, FL. I love bringing creatives to life with code.
           Constatntly focused on improving my development skills & getting better everyday. I hope you stay for while & check out my work
           below!
         </p>
       </div>
-      <div class="w-4/12">
-        <img class="rounded-bl-[300px]" src="images/profilepic/IMG_3112-removebg-preview.png" alt="" />
+      <div class="w-3/4 h-1/2 mx-auto md:w-4/12">
+        <img class="md:rounded-bl-[300px]" src="images/profilepic/IMG_3112-removebg-preview.png" alt="" />
       </div>
     </section>
 
     <!--  SKILLS -->
-    <section id="skills" class="container max-w-6xl mx-auto text-center mt-8 scroll-mt-28">
-      <h3 class="text-4xl uppercase md:text-5xl">Skills</h3>
+    <section id="skills" class="container max-w-6xl mx-auto text-center mt-8 scroll-mt-28 md:mt-20">
+      <h3 class="text-4xl uppercase md:text-5xl md:text-left">Skills</h3>
 
-      <div class="grid grid-cols-4 mt-8">
-        <div class="uppercase flex flex-col items-center">
+      <div class="grid grid-cols-3 place-items-center gap-y-12 mb-8 mt-8 text-sm md:grid-cols-4 md:text-lg md:mt-20">
+        <div class="uppercase flex flex-col justify-center items-center">
           <p>html</p>
           <img class="h-8 w-8" src="images/icons/html-5.png" alt="" />
         </div>
 
-        <div class="uppercase flex flex-col items-center">
+        <div class="uppercase flex flex-col items-center justify-center">
           <p>css</p>
           <img class="h-8 w-8" src="images/icons/css-3.png" alt="" />
         </div>
 
-        <div class="uppercase flex flex-col items-center">
+        <div class="uppercase flex flex-col items-center justify-center">
           <p>javascript</p>
           <img class="h-8 w-8" src="images/icons/js.png" alt="" />
         </div>
@@ -113,9 +113,7 @@
           <p>Sass</p>
           <img class="h-8 w-8" src="images/icons/sass.png" alt="" />
         </div>
-      </div>
 
-      <div class="grid grid-cols-4 mt-8">
         <div class="uppercase flex flex-col items-center">
           <p>bootstrap</p>
           <img class="h-8 w-8" src="images/icons/bootstrap.png" alt="" />
@@ -134,9 +132,7 @@
           <p>cms</p>
           <img class="h-8 w-8" src="images/icons/cms.png" alt="" />
         </div>
-      </div>
 
-      <div class="grid grid-cols-4 mt-8">
         <div class="uppercase flex flex-col items-center">
           <p>klaviyo</p>
           <img class="h-10 w-10" src="images/icons/Klaviyo-Logo.png" alt="" />
@@ -156,9 +152,7 @@
           <p>google analytics</p>
           <img class="h-8 w-8" src="images/icons/google.png" alt="" />
         </div>
-      </div>
 
-      <div class="grid grid-cols-4 mt-8">
         <div class="uppercase flex flex-col items-center">
           <p>photoshop</p>
           <img class="h-8 w-8" src="images/icons/photoshop.png" alt="" />
@@ -184,9 +178,9 @@
     <!-- Projects -->
     <section id="projects" class="scroll-mt-28">
       <!-- MY WORK CONTAINER -->
-      <div class="container max-w-6xl mx-auto my-32 px-6 text-gray-900 md:px-0">
+      <div class="container max-w-6xl mx-auto my-8 px-6 text-gray-900 md:my-32 md:px-0">
         <!-- MY WORK HEADER -->
-        <div class="flex justify-center mb-20 md:justify-between">
+        <div class="flex justify-center mb-8 md:mb-20 md:justify-between">
           <h2 class="text-4xl text-center uppercase md:text-left md:text-5xl">My Work</h2>
 
           <!-- SEE ALL PROJECTS LINK -->
@@ -249,9 +243,9 @@
         </div>
 
         <!-- bottom button container -->
-        <div class="flex justify-center mt-10 md:hidden">
+        <!-- <div class="flex justify-center mt-10 md:hidden">
           <button class="btn w-full md:hidden">See all</button>
-        </div>
+        </div> -->
       </div>
     </section>
 
