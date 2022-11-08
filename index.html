@@ -9,12 +9,19 @@
     <link href="https://fonts.googleapis.com/css2?family=Alata&family=Josefin+Sans:wght@300&display=swap" rel="stylesheet" />
     <link rel="icon" href="images/titlelogo1.png" type="image/x-icon" />
     <link rel="stylesheet" href="css/style.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     <script defer src="js/script.js"></script>
     <title>Christopher | Frontend Developer</title>
   </head>
   <body class="bg-stone-50">
     <!-- Hero Section -->
-    <section id="hero" class="bg-no-repeat bg-cover bg-top h-96 w-full md:h-screen md:bg-center md:bg-cover">
+    <section
+      data-aos="zoom-out"
+      data-aos-duration="1000"
+      data-aos-easing="ease-in-out"
+      id="hero"
+      class="bg-no-repeat bg-cover bg-top h-96 w-full md:h-screen md:bg-center md:bg-cover"
+    >
       <!-- Hero Container -->
       <div class="container max-w-6xl mx-auto px-6 py-12">
         <!-- Menu / Logo  -->
@@ -90,7 +97,12 @@
     </section>
 
     <!--  SKILLS -->
-    <section id="skills" class="container max-w-6xl mx-auto text-center mt-8 scroll-mt-28 md:mt-20">
+    <section
+      data-aos="fade-up"
+      data-aos-duration="1500"
+      id="skills"
+      class="container max-w-6xl mx-auto text-center mt-8 scroll-mt-28 md:mt-20"
+    >
       <h3 class="text-4xl uppercase md:text-5xl md:text-left">Skills</h3>
 
       <div class="grid grid-cols-3 place-items-center gap-y-12 mb-8 mt-8 text-sm md:grid-cols-4 md:text-lg md:mt-20">
@@ -190,7 +202,7 @@
         <!-- PROJECTS CONTAINER -->
         <div class="item-container">
           <!-- PROJECT 1 -->
-          <div class="group item">
+          <div data-aos="fade-right" data-aos-duration="1500" class="group item">
             <img src="images/emails/Disney full email.png" alt="" class="w-full duration-200 md:block group-hover:scale-110" />
             <!-- PROJECT GRADIENT -->
             <div class="item-gradient"></div>
@@ -207,7 +219,7 @@
           </div>
 
           <!-- PROJECT 2 -->
-          <div class="group item">
+          <div data-aos="fade-down" data-aos-duration="1500" class="group item">
             <img src="images/emails/New Yorker Email.png" alt="" class="w-full duration-200 md:block group-hover:scale-110" />
             <!-- PROJECT GRADIENT -->
             <div class="item-gradient"></div>
@@ -225,7 +237,7 @@
           </div>
 
           <!-- PROJECT 3 -->
-          <div class="group item">
+          <div data-aos="fade-left" data-aos-duration="1500" class="group item">
             <img src="images/emails/uber email.png" alt="" class="w-full duration-200 md:block group-hover:scale-110" />
             <!-- PROJECT GRADIENT -->
             <div class="item-gradient"></div>
@@ -303,5 +315,10 @@
         </div>
       </div>
     </footer>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
   </body>
 </html>
