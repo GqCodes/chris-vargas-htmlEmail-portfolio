@@ -25,7 +25,7 @@
     @apply absolute top-0 bottom-0 right-0 left-0 bg-gradient-to-b from-transparent to-gray-900 group-hover:from-gray-50 group-hover:to-white group-hover:opacity-70 group-hover:block;
   }
   .item-btn {
-    @apply py-2 px-3 uppercase border-2 font-alata bg-black text-white block  hover:text-amber-300;
+    @apply py-2 px-3 uppercase font-alata border-2 border-black bg-white text-black block  hover:text-amber-400 hover:scale-105 hover:transition;
   }
 }
 
@@ -60,12 +60,6 @@
 .hamburger-bottom {
   transform: translateY(14px);
 }
-/* .hamburger__menu {
-  display: flex;
-  justify-content: flex-end;
-  align-items: flex-end;
-} */
-
 .open {
   transform: rotate(90deg);
 }
