@@ -688,6 +688,15 @@ h5 {
 @media (min-width: 768px) {
   .item {
     width: 25%;
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .item {
+    font-size: 1.5rem;
+    line-height: 2rem;
   }
 }
 
@@ -820,8 +829,8 @@ h5 {
   display: none;
 }
 
-.h-96 {
-  height: 24rem;
+.h-screen {
+  height: 100vh;
 }
 
 .h-10 {
@@ -842,6 +851,14 @@ h5 {
 
 .h-6 {
   height: 1.5rem;
+}
+
+.h-96 {
+  height: 24rem;
+}
+
+.h-4\/5 {
+  height: 80%;
 }
 
 .max-h-2 {
@@ -1246,10 +1263,6 @@ h5 {
     display: none;
   }
 
-  .md\:h-screen {
-    height: 100vh;
-  }
-
   .md\:w-8\/12 {
     width: 66.666667%;
   }
@@ -1314,9 +1327,9 @@ h5 {
     background-position: center;
   }
 
-  .md\:px-0 {
-    padding-left: 0px;
-    padding-right: 0px;
+  .md\:px-4 {
+    padding-left: 1rem;
+    padding-right: 1rem;
   }
 
   .md\:text-left {
